@@ -5,8 +5,48 @@
         <title>Prova del file</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="SocialMedia, social, media, amici, utenti, login">
+        <meta name="description" content="Login Page">
+        <meta name="author" content="Federico">
     </head>
     <body>
-        <div>TODO write content</div>
+        <header>
+            <h1>Login: <br/> </h1>
+        </header>
+        
+        <nav>
+            <div>
+                <form action="login.html" method="post"> <!-- dico dove inserire il form e se far ela post (invio) o la get-->
+                    <label for="user"> Username: </label> <!--user=testo a sx del campo Username..label=etichetta...seleziono, quindi, l'etichetta per il campo user -->
+                    <input type="text" name="user" 
+                           id="user" value="Nome Utente"/> <!--l'input selezionato è quello testuale, associato a user....quindi, nel campo user, inserisco 'username' -->
+                    <br/>
+                    <label for="pass"> Password : </label> <!--analogo al form dello username -->
+                    <input type="password" name="pass"
+                           id="pass" value="password" />
+                    <br/>
+                    <label for="submit">Conferma:</label>
+                    <input type="submit" value="Invio" />
+                    
+
+                </form>
+            </div>
+        </nav>
+        <aside>
+            <div>
+                <h2>Link utili: <br/>  </h2>
+                <ol>
+                    <li><a href="E:\Dispense ed Esercizi Infomatica\AMM\Laboratorio\NetBeans Projects\Amm-s-project\Progetto_AMM\web\M1\descrizione.html">
+                        Descrizione </a> </li>
+                
+                    <li><a href="E:\Dispense ed Esercizi Infomatica\AMM\Laboratorio\NetBeans Projects\Amm-s-project\Progetto_AMM\web\M1\profilo.html">
+                        Profilo </a></li>
+                    <li><a href="E:\Dispense ed Esercizi Infomatica\AMM\Laboratorio\NetBeans Projects\Amm-s-project\Progetto_AMM\web\M1\bacheca.html">
+                        Bacheca </a></li>
+                </ol>
+            
+            </div>
+                
+        </aside>
     </body>
 </html>

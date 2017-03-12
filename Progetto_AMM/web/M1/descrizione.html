@@ -7,31 +7,39 @@
         <meta name="keywords" content="SocialMedia, social, media, amici, utenti">
         <meta name="description" content="Descrizione del social network">
         <meta name="author" content="Federico">
+        
     </head>
     <body>
-        <header>
+        <header> <!--Testa della pagina, contenente il titolo -->
             <div>
-                <a href="#Descrizione">Descrizione</a>
-                <a href="#Iscrizione">Iscrizione</a>
                 <h1>Benvenuto su NerdBook</h1>    
             </div>
         </header>
         
-        <nav>
+        <nav><!--Sezione di navigazione, contenente i link interni al sito -->
+            <p>Sommario:</p>
+            <ul>
+                <li><a href="#Descrizione">Descrizione</a></li>
+                <li><a href="#Iscrizione">Iscrizione</a></li> 
+           </ul>
+        </nav>
+    
+        <article> <!--Sezione contenente il testo più rilevante -->
             <div>
-                <article>
-                <a id="Descrizione">
-                <h2>Descrizione</h2>
-                </a>
-                <p>Questo social network è gratis e lo sarà sempre.
-                   Diffida dalle imitazioni a pagamento. <br/>                
-                </p>
-                </article>
+                    <a id="Descrizione"> <!--Sotto sezione sulla descrizione del social network -->
+                    <h2>Descrizione</h2>
+                    </a>
+                    <p>Questo social network è gratis e lo sarà sempre.
+                       Diffida dalle imitazioni a pagamento.                
+                    </p>
             </div>
-            
+        </article>
+                
+
+<!--Sotto sezione sull'iscrizione al social network-->
+        <article> 
             <div>
-                <article>
-                <a id="Iscrizione">
+            <a id="Iscrizione">
                 <h3>Come iscriversi</h3> 
                 </a>
                     <ol>
@@ -40,18 +48,20 @@
                         <li>Clicca su 'Conferma'</li>
                         <li>Clicca sul link di conferma, presente all'interno della mail che vi abbiamo spedito</li>
                     </ol>
-                </article>
+
             </div>
-        </nav>
-        
-        <aside>
-            <p> Se sei già iscritto, clicca qui:                
-                <a href="E:\Dispense ed Esercizi Infomatica\AMM\Laboratorio\NetBeans Projects\Amm-s-project\Progetto_AMM\web\M1\login.html">
-                    Login
-                </a>
-            </p>
+        </article>
+                           
+        <aside> <!--Sezione con i link esterni-->
+            <div>   
+                <p> Se sei già iscritto, clicca qui:                
+                    <a href="login.html">
+                        Login
+                    </a>
+                </p>
+            </div>
         </aside>
-      
+        
         
     </body>
 </html>

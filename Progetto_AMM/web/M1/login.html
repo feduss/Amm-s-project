@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Prova del file</title>
+        <title>Login</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="SocialMedia, social, media, amici, utenti, login">
@@ -11,42 +11,38 @@
     </head>
     <body>
         <header>
-            <h1>Login: <br/> </h1>
+            <h1>Login: </h1>
         </header>
-        
-        <nav>
+                
+        <article>
+            <h2>Inserisci i dati:</h2>
             <div>
-                <form action="login.html" method="post"> <!-- dico dove inserire il form e se far ela post (invio) o la get-->
-                    <label for="user"> Username: </label> <!--user=testo a sx del campo Username..label=etichetta...seleziono, quindi, l'etichetta per il campo user -->
-                    <input type="text" name="user" 
-                           id="user" value="Nome Utente"/> <!--l'input selezionato è quello testuale, associato a user....quindi, nel campo user, inserisco 'username' -->
-                    <br/>
-                    <label for="pass"> Password : </label> <!--analogo al form dello username -->
-                    <input type="password" name="pass"
-                           id="pass" value="password" />
-                    <br/>
-                    <label for="submit">Conferma:</label>
-                    <input type="submit" value="Invio" />
+                <form action="login.html" method="post">
+                    <label for="User">Username:</label> 
+                    <input type="text" name="User" id="User" value="Nome Utente"/>
                     
-
+                    <br/>   
+                    
+                    <label for="Pass">Password :</label>
+                    <input type="password" name="Pass" id="Pass" value="Password"/>
+                    
+                    <br/>
+                    
+                    <button type="submit">Invio</button>
+                    
                 </form>
             </div>
-        </nav>
+        </article>
+        
         <aside>
-            <div>
-                <h2>Link utili: <br/>  </h2>
-                <ol>
-                    <li><a href="E:\Dispense ed Esercizi Infomatica\AMM\Laboratorio\NetBeans Projects\Amm-s-project\Progetto_AMM\web\M1\descrizione.html">
-                        Descrizione </a> </li>
-                
-                    <li><a href="E:\Dispense ed Esercizi Infomatica\AMM\Laboratorio\NetBeans Projects\Amm-s-project\Progetto_AMM\web\M1\profilo.html">
-                        Profilo </a></li>
-                    <li><a href="E:\Dispense ed Esercizi Infomatica\AMM\Laboratorio\NetBeans Projects\Amm-s-project\Progetto_AMM\web\M1\bacheca.html">
-                        Bacheca </a></li>
-                </ol>
-            
-            </div>
-                
+            <p>Link utili:</p>
+                <ul>
+                    <li><a href="descrizione.html">Descrizione</a></li>
+                    <li><a href="bacheca.html">Bacheca</a></li>
+                    <li><a href="profilo.html">Profilo</a></li>
+                </ul>
         </aside>
+                
+        
     </body>
 </html>

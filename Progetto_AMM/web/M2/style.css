@@ -1,0 +1,57 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28-mar-2017, 9.13.17
+    Author     : fedus
+*/
+
+/*Ho cercato un font online e ho trovato un codice adattabile su questo sito:
+* http://www.html.it/pag/18954/font-personalizzati-con-font-face/ 
+*/
+@font-face {
+   font-family: 'asrafel';
+   src: local('asrafel'), url('asrafel.ttf') format('truetype');
+}
+
+header{
+    background-color: e4e4e4; 
+    
+}
+
+h1{
+    font: 40px/60px Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    border-bottom: solid #e4e4e4;
+    border-bottom-width: medium;
+    
+}
+
+body{
+    background-color: #FFFAFA;
+    
+}
+
+nav{
+    text-align: left;
+    border-right: solid #e4e4e4;
+    border-right-width: medium;
+}
+
+div#DivBody{
+    border-left: solid #e4e4e4;
+    border-left-width: medium;
+    
+}
+div#descr{
+    text-align: center;
+}
+
+div#iscr nav ul, nav li{
+    text-decoration: none;
+    
+}

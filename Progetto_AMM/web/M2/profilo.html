@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Profilo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="SocialMedia, social, media, amici, utenti, bacheca, profilo">
+        <meta name="Bacheca" content="Profilo dell'utente">
+        <meta name="author" content="Federico">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
+        
+    </head>
+    <body>
+        <header id="Profilo">
+            <div>
+                <h1>Nerdbook</h1>
+            </div>
+        </header>
+        
+        <nav id="profilo">
+                <ul>
+                    <li><a href="descrizione.html">Descrizione</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+        </nav>
+        
+        <div id="Registrazione">
+            <form method="post" action="profilo.html">
+                
+                <div id="DatiAnagrafici">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" value="Nome Utente"/>
+                                
+                    <label for="cognome">Cognome:</label>
+                    <input type="text" name="cognome" id="cognome" value="Cognome Utente"/><br/>
+                        
+                    <label for="data">Data di nascita: </label>
+                    <input type="date" name="data" id="data"/><br/>
+                </div>
+                
+                <div id="DescrizioneUtente">
+                    <label for="foto">Immagine del profilo:</label>
+                    <input type="file" name="foto" id="foto" accept="image/*"/><br/>
+
+                    <label for="lungo">Frase di Presentazione:</label>
+                    <textarea rows="3" cols="20" name="lungo" id="lungo">Inserisci una frase che ti rappresenti</textarea><br/>
+                </div>
+                
+                <div id="Password">
+                    <label for="psw">Password:</label>
+                    <input type="password" name="psw" id="psw" value=""/>
+
+                    <label for="cpsw">Conferma password:</label>
+                    <input type="password" name="cpsw" id="cpsw" value=""/><br/>
+                </div>
+                
+                <button type="submit">Conferma</button>
+            </form>
+        </div>
+    </body>
+</html>
+

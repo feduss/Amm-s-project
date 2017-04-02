@@ -16,42 +16,158 @@ and open the template in the editor.
    src: local('asrafel'), url('asrafel.ttf') format('truetype');
 }
 
+/*Inizio regole per tutti i file*/
 header{
-    background-color: e4e4e4; 
+    background-color: #FFFAFA; 
     
+     
 }
+
 
 h1{
     font: 40px/60px Arial, Helvetica, sans-serif;
     text-align: center;
     font-weight: bold;
     padding-top: 10px;
-    border-bottom: solid #e4e4e4;
-    border-bottom-width: medium;
+}
+
+h2{
+   font: 20px/30px Arial, Helvetica, sans-serif;
+   text-align: center;
+   font-weight: bold;
+   padding-top: 10px;
     
+}
+
+h3{
+   font: 15px/15px Arial, Helvetica, sans-serif;
+   text-align: left;
+   font-weight: bold;
+   padding-top: 10px;
 }
 
 body{
-    background-color: #FFFAFA;
+   background-color: #FFFAFA;
+   font: 15px/15px Arial, Helvetica, sans-serif; 
+}
+
+
+a:link{
+    text-decoration: none;
     
 }
+
+a:visited{
+    text-decoration: underline;
+    
+}
+
+a:hover{
+    font-weight: bold;    
+}
+
+form{
+    text-align: center;
+    
+}
+
+/*Fine regole generali*/
+
+/*Inizio regole bacheca*/
+
+header#Bacheca {
+    border-right: solid;
+    border-bottom: solid;
+    display: inline-block;
+    position: absolute;
+}
+
+nav#bacheca{
+    font: 30px/45px Arial, Helvetica, sans-serif;
+    border-bottom: solid;   
+    position: relative;
+    left: 190px;
+    top:49px;
+}
+
+nav li, nav ol{
+    list-style-type: none;
+    display:inline-block;
+    
+    
+}
+
+article#nuovoPost1{
+    border: solid;
+    display: inline-block;
+    position: absolute; 
+    left: 775px;
+    top: 200px;
+    padding-left:132px;
+    padding-right:134px;
+    
+}
+h2#Post1{
+    text-align: left;
+}
+
+article#nuovoPost2{
+    text-align: center;
+    border: solid;
+    display: inline-block;
+    position: absolute;
+    top: 400px;   
+    left:775px;
+    padding-left: 50px;
+    padding-right:50px;
+
+}
+
+article#nuovoPost3{
+    border: solid;
+    display: inline-block;
+    position: absolute; 
+    left: 650px;
+    top: 775px;
+    padding-left:100px;
+    padding-right:100px;
+}
+
+
+
+
+
+
+
+/*div#descr{
+    text-align: center;
+    padding-bottom: 20px;    
+}
+
+div#somm{
+    text-align: left;
+    border-right: solid;
+   margin-bottom: 5px;
+    
+}
+
+div#iscr{
+    text-align: left;   
+}
+
+
 
 nav{
     text-align: left;
-    border-right: solid #e4e4e4;
-    border-right-width: medium;
+    bottom:25px;
+    right: 25px;
+    height:25px; 
 }
 
-div#DivBody{
-    border-left: solid #e4e4e4;
-    border-left-width: medium;
-    
-}
-div#descr{
-    text-align: center;
-}
+
 
 div#iscr nav ul, nav li{
     text-decoration: none;
     
 }
+*/

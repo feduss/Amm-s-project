@@ -26,14 +26,13 @@ header{
 
 h1{
     font: 40px/60px Arial, Helvetica, sans-serif;
-    text-align: center;
+   /* text-align: center;*/
     font-weight: bold;
     padding-top: 10px;
 }
 
 h2{
    font: 20px/30px Arial, Helvetica, sans-serif;
-   text-align: center;
    font-weight: bold;
    padding-top: 10px;
     
@@ -41,7 +40,6 @@ h2{
 
 h3{
    font: 15px/15px Arial, Helvetica, sans-serif;
-   text-align: left;
    font-weight: bold;
    padding-top: 10px;
 }
@@ -76,61 +74,65 @@ form{
 /*Inizio regole bacheca*/
 
 header#Bacheca {
-    border-right: solid;
-    border-bottom: solid;
-    display: inline-block;
-    position: absolute;
+    border: solid;
+    text-align: left;
+    width: 200px;
+    height: 125px;
+    
 }
 
 nav#bacheca{
     font: 30px/45px Arial, Helvetica, sans-serif;
-    border-bottom: solid;   
+    border: solid;
     position: relative;
-    left: 190px;
-    top:49px;
+    left: 203px;
+    bottom: 131px;
+    height: 109px;
+    width: 1010px;;
+    padding-top: 16px;
+    
+    
 }
 
 nav li, nav ol{
     list-style-type: none;
-    display:inline-block;
+    display: inline-block;
+
     
     
 }
 
-article#nuovoPost1{
-    border: solid;
-    display: inline-block;
-    position: absolute; 
-    left: 775px;
-    top: 200px;
-    padding-left:132px;
-    padding-right:134px;
+
+nav li#logout{
+    text-align: right;
+    text-decoration: none;
+    padding-left:500px;
+}
+
+div#colonna1{
     
-}
-h2#Post1{
-    text-align: left;
-}
-
-article#nuovoPost2{
-    text-align: center;
     border: solid;
-    display: inline-block;
-    position: absolute;
-    top: 400px;   
-    left:775px;
-    padding-left: 50px;
-    padding-right:50px;
-
+    float:left;
+    /*position: relative;
+    bottom: 150px;
+    left: 10px;*/
 }
 
-article#nuovoPost3{
+.post{
+    /*text-align: left;*/
+    padding-left:10px;
     border: solid;
-    display: inline-block;
-    position: absolute; 
-    left: 650px;
-    top: 775px;
-    padding-left:100px;
-    padding-right:100px;
+    display: block;
+    float: top;
+    position: relative;
+    left: 43px;
+    bottom:134px;
+    width: 75%;
+    margin-left: auto; /*con queste due regole, centro gli elementi */
+    margin-right: auto;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    
 }
 
 

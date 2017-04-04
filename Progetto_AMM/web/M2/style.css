@@ -19,16 +19,16 @@ and open the template in the editor.
 /*Inizio regole per tutti i file*/
 header{
     background-color: #FFFAFA; 
+    border-radius: 15px;
     
      
 }
 
 
 h1{
-    font: 40px/60px Arial, Helvetica, sans-serif;
+    font: 40px/15px Arial, Helvetica, sans-serif;
    /* text-align: center;*/
     font-weight: bold;
-    padding-top: 10px;
 }
 
 h2{
@@ -45,8 +45,8 @@ h3{
 }
 
 body{
-   background-color: #FFFAFA;
-   font: 15px/15px Arial, Helvetica, sans-serif; 
+   background-color: #3366FF;
+   font: 15px/5px Arial, Helvetica, sans-serif; 
 }
 
 
@@ -73,103 +73,92 @@ form{
 
 /*Inizio regole bacheca*/
 
-header#Bacheca {
+header#Bacheca{
     border: solid;
-    text-align: left;
+    text-align: center;
     width: 200px;
-    height: 125px;
+    height: 50px;
+    float: left;
+    
+}
+
+header#Profilo{
+    border: solid;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    float: left;
     
 }
 
 nav#bacheca{
-    font: 30px/45px Arial, Helvetica, sans-serif;
+    background-color: white;
+    font: 30px/5px Arial, Helvetica, sans-serif;
     border: solid;
-    position: relative;
-    left: 203px;
-    bottom: 131px;
-    height: 109px;
-    width: 1010px;;
-    padding-top: 16px;
-    
+    border-radius:15px;
+    float: top;
+    height: 50px;
+    width: 1210px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+   
     
 }
 
-nav li, nav ol{
+nav#profilo{
+    background-color: white;
+    font: 30px/5px Arial, Helvetica, sans-serif;
+    border: solid;
+    border-radius:15px;
+    float: top;
+    height: 50px;
+    width: 1210px;
+   
+    
+}
+
+nav ul, nav li{
     list-style-type: none;
-    display: inline-block;
-
-    
-    
+    display: inline-block;   
 }
 
 
-nav li#logout{
-    text-align: right;
+ul#logout{
+    font: 20px/4px Arial, Helvetica, sans-serif;
     text-decoration: none;
-    padding-left:500px;
+    margin-left: 380px;
 }
 
 div#colonna1{
-    
+    background-color: white;
     border: solid;
     float:left;
-    /*position: relative;
-    bottom: 150px;
-    left: 10px;*/
+    width: 175px;
+    margin-right: 8px;
+    margin-bottom: 600px;
+    margin-top: 8px;
+    border-radius: 5px;
 }
 
 .post{
     /*text-align: left;*/
+    background-color: white;
+    border-radius:5px;
     padding-left:10px;
     border: solid;
     display: block;
-    float: top;
-    position: relative;
-    left: 43px;
-    bottom:134px;
+    float: left;
     width: 75%;
-    margin-left: auto; /*con queste due regole, centro gli elementi */
+    margin-left: 10px; 
     margin-right: auto;
     margin-bottom: 8px;
     margin-top: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2)
     
 }
 
-
-
-
-
-
-
-/*div#descr{
-    text-align: center;
-    padding-bottom: 20px;    
-}
-
-div#somm{
-    text-align: left;
-    border-right: solid;
-   margin-bottom: 5px;
+img{
+    max-width: 50px;
+    max-height: 50px;
     
 }
 
-div#iscr{
-    text-align: left;   
-}
-
-
-
-nav{
-    text-align: left;
-    bottom:25px;
-    right: 25px;
-    height:25px; 
-}
-
-
-
-div#iscr nav ul, nav li{
-    text-decoration: none;
-    
-}
-*/

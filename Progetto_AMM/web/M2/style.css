@@ -20,6 +20,7 @@ and open the template in the editor.
 header{
     background-color: #FFFAFA; 
     border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
     
      
 }
@@ -76,7 +77,7 @@ form{
 header#Bacheca{
     border: solid;
     text-align: center;
-    width: 15%;
+    width: 15.2%;
     height: 9%;
     position: fixed;
     top:2%;
@@ -87,7 +88,7 @@ header#Bacheca{
 header#Profilo{
     border: solid;
     text-align: center;
-    width: 15%;
+    width: 15.2%;
     height: 9%;
     position: fixed;
     top:2%;
@@ -103,8 +104,18 @@ header#Login{
     left: 35%;
     width: 30%;
     
+    
 }
-
+header#Descrizione{
+    border: solid;
+    text-align: center;
+    width: 45%;
+    height: 9%;
+    position: fixed;
+    top:2%;
+    margin-bottom: 2%;
+    
+}
 
 nav#bacheca{
     background-color: white;
@@ -115,9 +126,11 @@ nav#bacheca{
     left: 16.5%;
     display: inline-block;
     height: 10%;
-    width: 60%;
+    width: 60.5%;
     margin-bottom: 2%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);   
+    margin-left: 1.5%;
+    box-shadow: 0 0 10px rgba(0,0,0,1);  
+    border-style: solid;
 }
 
 nav#profilo{
@@ -129,14 +142,35 @@ nav#profilo{
     left: 16.5%;
     display: inline-block;
     height: 10%;
-    width: 60%;
+    width: 60.5%;
     margin-bottom: 2%;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);   
+    margin-left: 1.5%;
+    box-shadow: 0 0 10px rgba(0,0,0,1); 
+    border-style: solid;
+}
+
+nav#descrizione{
+    background-color: #FFFAFA;
+    font: 30px/5px Arial, Helvetica, sans-serif;
+    border-radius:15px;
+    border: solid;
+    position: fixed;
+    top: 2%;
+    left: 46%;
+    display: inline-block;
+    height: 10%;
+    width: 54%;
+    margin-bottom: 2%;
+    box-shadow: 0 0 10px rgba(0,0,0,1);   
 }
 
 nav ul, nav li{
     list-style-type: none;
     display: inline-block;   
+}
+
+ul li{
+    list-style-type: none;
 }
 
 
@@ -147,20 +181,45 @@ ul#logout{
 }
 
 div#colonna1{
-    list-style-type: disc;
+    list-style-type: none;
     background-color: white;
     float:left;
-    width: 13%;
+    width: 15.5%;
     height: 200%;
-    margin-right: 3%;
+    margin-right: 2%;
     margin-bottom: 60%;
     margin-top: 6.5%;
     border-radius: 5px;
-    padding-bottom: 39%;
+    padding-bottom: 25.5%;
+    border-style: solid;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
 }
+
+div#colonna2{
+    background-color: white;
+    float:left;
+    width: 15.5%;
+    height: 200%;
+    margin-right: 2%;
+    margin-bottom: 60%;
+    margin-top: 6.5%;
+    border-radius: 5px;
+    padding-bottom: 8.5%;
+    border-style: solid;
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
 
 div#colonna1 h2{
     padding-left: 4.5%;
+}
+
+div#colonna2 h2{
+    padding-left: 4.5%;
+}
+
+.user:before{
+    content: url("img/user.png");
 }
 
 div#stato{
@@ -172,8 +231,9 @@ div#stato{
     display: block;
     float: left;
     width: 60%;
-    height: 75%; 
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    height: 50%; 
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    border-style: solid;
     
 }
 
@@ -189,12 +249,13 @@ div#stato h2{
     /*text-align: left;*/
     background-color: white;
     border-radius:5px;
+    border-style: solid;
     padding-left:10px;
     margin-top: 1.5%;
     display: block;
     width: 60%;
     float: left;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,1);
     
 }
 
@@ -203,12 +264,6 @@ ul#stato1 li{
     display: inline-block;
 }
 
-img{
-    max-width: 50px;
-    max-height: 50px;
-    border-radius: 10px;
-    
-}
 
 div#Registrazione{
     padding-left: 1%;
@@ -218,34 +273,47 @@ div#Registrazione{
     border-radius:5px;
     margin-bottom: 1.5%;
     display: block;
-    width: 60%;
+    width: 59.5%;
     float: left;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0,0,0,1);
+    border-style: solid;
    
 }
 
+
+
 div#Registrazione ul{
-    text-align: left;
     list-style-type: none;
 }
 
-div#Registrazione ul li{
-    margin-bottom: 2%;
-    padding-bottom: 2%;
+div#Registrazione ul li{ /*separo gli elementi della lista di un tot*/
+    padding-bottom: 5%;
 }
 
-div#Registrazione ul li label{
+div#Registrazione ul li label{ /*sposto le etichette dei campi di input a sx, ma non al margine */
     float: left;
     margin-left: 20%;
 }
 
-div#Registrazione ul li button{
+div#Registrazione ul li#frase{ /*con le seguenti due regole, allineo correttamente i due campi della passw*/
+    padding-bottom: 9%;
+}
+
+.pass label{
+    margin-top: 1%;
+}
+
+div#Registrazione ul li#propic input{ /*allineo il campo file */
+    padding-right: 0%;
+}
+
+div#Registrazione ul li button{ /*sposto il bottone di invio */
     float: left;
     margin-left: 20%;
     
 }
 
-div#Registrazione ul li input{
+div#Registrazione ul li input{ /*sposto i campi di input a dx, separandole di un tot dal margine dx */
     float: right;
     padding-right: 10%;
     margin-right: 20%;
@@ -253,8 +321,18 @@ div#Registrazione ul li input{
 
 div#Registrazione ul li textarea{
     float: right;
-    padding-right: 10%;
+    padding-right: 8.75%;
     margin-right: 20%;
+}
+
+li#data input{
+    padding-left: 2.30%;
+        
+}
+
+li#propic label{
+    padding-right: 0%;
+    margin-right: 0%;
 }
 
 div#LoginBody{
@@ -278,4 +356,31 @@ div#LoginBody h2{
 div#LoginBody input{
     margin-bottom: 2%;
     
+}
+
+#divBody{
+    background-color: white;
+    
+}
+
+.descr{
+    background-color: white;
+    margin-top: 4.5%;
+    border-radius: 5px;  
+    float: right;
+    width: 50%;
+}
+
+.iscr{
+    background-color: white;
+    margin-top: 4.5%;
+    border-radius: 5px;
+    float: left;
+    width: 46%;
+    height: 50%;
+    
+}
+
+.iscr ol li{
+    margin-bottom: 2.5%;
 }

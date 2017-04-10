@@ -29,12 +29,12 @@
             </ul>
         </nav>
         
-        <div id="colonna1">
+        <div id="colonna2">
             <h2>Persone:</h2>
             <ul>
-                <li><p>Federico Saccà</p></li>
-                <li><p>Matteo Sesselego</p></li>
-                <li><p>Simone Genovesi</p></li>
+                <li class="user"><p >Federico Saccà</p></li>
+                <li class="user"><p>Matteo Sesselego</p></li>
+                <li class="user"><p>Simone Genovesi</p></li>
             </ul>
             
             <h2>Gruppi:</h2>
@@ -50,45 +50,45 @@
             <form method="post" action="profilo.html">
             
                 <ul>
-                <li>
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" value="Nome Utente"/>
-                <li>
-                
-                
-                <li>
-                    <label for="cognome">Cognome:</label>
-                    <input type="text" name="cognome" id="cognome" value="Cognome Utente"/>
-                </li>
-                
-                <li>
-                    <label for="data">Data di nascita: </label>
-                    <input type="date" name="data" id="data"/>
-                </li>
-                
-                <li>
-                    <label for="foto">Immagine del profilo:</label>
-                    <input type="file" name="foto" id="foto" accept="image/*"/>
-                <li>
-               
-                <li>
-                    <label for="lungo">Frase di Presentazione:</label>
-                    <textarea rows="3" cols="20" name="lungo" id="lungo">Inserisci una frase che ti rappresenti</textarea>
-                <li>
-                
-                <li>
-                    <label for="psw">Password:</label>
-                    <input type="password" name="psw" id="psw" value=""/>
-                <li>
-                
-                <li>
-                    <label for="cpsw">Conferma password:</label>
-                    <input type="password" name="cpsw" id="cpsw" value=""/>
-                <li>
-                
-                <li>
-                <button type="submit">Conferma</button>
-                </li>
+                    <li>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" value="Nome Utente"/>
+                    </li>
+
+
+                    <li>
+                        <label for="cognome">Cognome:</label>
+                        <input type="text" name="cognome" id="cognome" value="Cognome Utente"/>
+                    </li>
+
+                    <li id="data">
+                        <label for="data">Data di nascita: </label>
+                        <input type="date" name="data" id="data"/>
+                    </li>
+
+                    <li id="propic">
+                        <label for="foto">Immagine del profilo:</label>
+                        <input type="file" name="foto" id="foto" accept="image/*"/>
+                    <l/i>
+
+                    <li id="frase">
+                        <label for="lungo">Frase di Presentazione:</label>
+                        <textarea rows="3" cols="20" name="lungo" id="lungo">Inserisci una frase che ti rappresenti</textarea>
+                    </li>
+
+                    <li class="pass">
+                        <label for="psw">Password:</label>
+                        <input type="password" name="psw" id="psw" value=""/>
+                    </li>
+
+                    <li class="pass">
+                        <label for="cpsw">Conferma password:</label>
+                        <input type="password" name="cpsw" id="cpsw" value=""/>
+                    </li>
+
+                    <li>
+                    <button type="submit">Conferma</button>
+                    </li>
                 
                 </ul>
             </form>

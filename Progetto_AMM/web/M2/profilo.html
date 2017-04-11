@@ -12,13 +12,13 @@
         
     </head>
     <body>
-        <header id="Profilo">
+        <header class="header">
             <div>
                 <h1>Nerdbook</h1>
             </div>
         </header>
         
-        <nav id="profilo">
+        <nav class="nav">
                 <ul>
                 <li><a href="profilo.html">Profilo</a></li>
                 <li><a href="bacheca.html">Bacheca</a></li>
@@ -29,12 +29,12 @@
             </ul>
         </nav>
         
-        <div id="colonna2">
+        <div class="colonna">
             <h2>Persone:</h2>
             <ul>
-                <li class="user"><p >Federico Saccà</p></li>
-                <li class="user"><p>Matteo Sesselego</p></li>
-                <li class="user"><p>Simone Genovesi</p></li>
+                <li class="utenti"><p >Federico Saccà</p></li>
+                <li class="utenti"><p>Matteo Sesselego</p></li>
+                <li class="utenti"><p>Simone Genovesi</p></li>
             </ul>
             
             <h2>Gruppi:</h2>
@@ -48,9 +48,12 @@
         
         <div id="Registrazione">
             <form method="post" action="profilo.html">
-            
+                
+                <div id="imgprofilo">
+                    
+                </div>
                 <ul>
-                    <li>
+                    <li id="nome1">
                         <label for="nome">Nome:</label>
                         <input type="text" name="nome" id="nome" value="Nome Utente"/>
                     </li>
@@ -61,15 +64,15 @@
                         <input type="text" name="cognome" id="cognome" value="Cognome Utente"/>
                     </li>
 
-                    <li id="data">
+                    <li id="data1">
                         <label for="data">Data di nascita: </label>
                         <input type="date" name="data" id="data"/>
                     </li>
 
                     <li id="propic">
                         <label for="foto">Immagine del profilo:</label>
-                        <input type="file" name="foto" id="foto" accept="image/*"/>
-                    <l/i>
+                        <input type="text" name="foto" id="foto" value="URL dell'immagine"/>
+                    </li>
 
                     <li id="frase">
                         <label for="lungo">Frase di Presentazione:</label>

@@ -32,9 +32,9 @@
         <div class="colonna">
             <h2>Persone:</h2>
             <ul>
-                <li class="utenti"><p >Federico Saccà</p></li>
-                <li class="utenti"><p>Matteo Sesselego</p></li>
-                <li class="utenti"><p>Simone Genovesi</p></li>
+                <li><p>Federico Saccà</p></li>
+                <li><p>Matteo Sesselego</p></li>
+                <li><p>Simone Genovesi</p></li>
             </ul>
             
             <h2>Gruppi:</h2>
@@ -50,16 +50,16 @@
             <form method="post" action="profilo.html">
                 
                 <div id="imgprofilo">
-                    
+                    <img title="Img" alt="Immagine del profilo di boh" src="img/icon.png" width="200" height="200"/>
                 </div>
-                <ul>
+                <ul id="lista">
                     <li id="nome1">
                         <label for="nome">Nome:</label>
                         <input type="text" name="nome" id="nome" value="Nome Utente"/>
                     </li>
 
 
-                    <li>
+                    <li id="cognome1">
                         <label for="cognome">Cognome:</label>
                         <input type="text" name="cognome" id="cognome" value="Cognome Utente"/>
                     </li>
@@ -76,15 +76,15 @@
 
                     <li id="frase">
                         <label for="lungo">Frase di Presentazione:</label>
-                        <textarea rows="3" cols="20" name="lungo" id="lungo">Inserisci una frase che ti rappresenti</textarea>
+                        <textarea rows="3" cols="22" name="lungo" id="lungo">Inserisci una frase che ti rappresenti</textarea>
                     </li>
 
-                    <li class="pass">
+                    <li id="pass1">
                         <label for="psw">Password:</label>
                         <input type="password" name="psw" id="psw" value=""/>
                     </li>
 
-                    <li class="pass">
+                    <li id="pass2">
                         <label for="cpsw">Conferma password:</label>
                         <input type="password" name="cpsw" id="cpsw" value=""/>
                     </li>

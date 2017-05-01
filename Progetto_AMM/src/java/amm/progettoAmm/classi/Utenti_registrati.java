@@ -113,7 +113,7 @@ public class Utenti_registrati{
     public void setUrlFotoProfilo(String urlFotoProfilo) {
         this.urlFotoProfilo = urlFotoProfilo;
     }
-
+    
     private int id;
     private String nome;
     private String cognome;
@@ -123,4 +123,6 @@ public class Utenti_registrati{
     private String frasePres;
     private String urlFotoProfilo;
     
+    
+        
 }

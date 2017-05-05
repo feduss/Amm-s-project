@@ -29,16 +29,16 @@
         <div class="colonna">
             
             <h2>Persone:</h2>
-            <c:forEach var="user" items="${Utente}">
+            <c:forEach var="user" items="${Utenti}"> /*da modificare*/
                 <ul>
-                    <li class="utenti"><p>${user.nome}</p></li>
+                    <li class="utenti"><p>${post.getUser().getNome()}</p></li>
                 </ul>
             </c:forEach>
 
             <h2>Gruppi:</h2>
-            <c:forEach var="group" items="${Gruppi}">
+            <c:forEach var="group" items="${Gruppi}"> /*da modificare*/
                 <ul>
-                    <li><p>${group.nome}</p></li>
+                    <li><p>${post.getGroup().getNome()}</p></li>
                 </ul>
             </c:forEach>          
                         
